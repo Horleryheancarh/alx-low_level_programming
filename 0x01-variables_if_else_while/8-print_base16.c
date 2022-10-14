@@ -4,7 +4,7 @@
  *
  *Description: Print all hexadecimal characters
  *
- *Return : 0 Success
+ *Return: 0 Success
  */
 int main(void)
 {
