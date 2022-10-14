@@ -1,0 +1,21 @@
+#include <stdio.h>
+/**
+ *main - Entry point
+ *
+ *Description: Print alphabet in reverse followed by new line
+ *
+ *Return: 0 Success
+ */
+int main(void)
+{
+	int i;
+
+	for (i = 122; i > 98; i--)
+	{
+		putchar(i);
+	}
+
+	putchar('\n');
+
+	return (0);
+}
