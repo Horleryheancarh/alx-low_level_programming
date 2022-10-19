@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
  *main - Entry point
- *Description: Program find the sum of fibonacci numbers under 4000000
+ *Description: Program find the sum of even fibonacci numbers under 4000000
  *
  *Return: 0 Success
  */
