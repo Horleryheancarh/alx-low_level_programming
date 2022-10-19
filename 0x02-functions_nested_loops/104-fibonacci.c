@@ -12,12 +12,12 @@ int main(void)
 	int n = 2;
 	long int temp;
 
-	printf("%ld, %ld\n", a, b);
+	printf("%ld, %ld", a, b);
 	while (n < 98)
 	{
 		temp = b;
 		b += a;
-		printf("%ld, ", b);
+		printf(", %ld", b);
 		a = temp;
 		n++;
 	}
