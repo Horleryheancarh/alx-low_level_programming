@@ -16,8 +16,8 @@ int main(void)
 	while (n < 50)
 	{
 		temp = b;
-		printf(", %d", temp);
 		b += a;
+		printf(", %d", b);
 		a = temp;
 		n++;
 	}
