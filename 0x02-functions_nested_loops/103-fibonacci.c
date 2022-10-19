@@ -11,12 +11,14 @@ int main(void)
 
 	a = 1;
 	b = 2;
-	while (b < 4000000)
+	temp = 0;
+	sum = 0;
+	while (temp < 4000000)
 	{
 		temp = b;
 		b += a;
-		if ((b % 2) == 0)
-			sum += b;
+		if ((temp % 2) == 0)
+			sum += temp;
 		a = temp;
 	}
 	printf("%ld\n", sum);
