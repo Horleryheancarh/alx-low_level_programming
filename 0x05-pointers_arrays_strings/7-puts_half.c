@@ -26,10 +26,8 @@ void puts_half(char *s)
 	for (n++; n <= len; n++)
 	{
 		if (s[n] == '\0')
-		{
-			_putchar('\n');
 			break;
-		}
 		_putchar(s[n]);
 	}
+	_putchar('\n');
 }
