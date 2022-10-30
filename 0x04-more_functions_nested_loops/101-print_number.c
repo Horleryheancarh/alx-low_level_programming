@@ -8,7 +8,8 @@
  */
 void print_number(int n)
 {
-	/* i - number of digits
+	/**
+	 * i - number of digits
 	 * num - the integer
 	 * d - placeholder to cal number of digits
 	 */
