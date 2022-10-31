@@ -29,7 +29,7 @@ void print_buffer(char *b, int size)
 				else
 					printf("  ");
 			}
-			
+
 			printf(" ");
 			for (k = i; k < i + 10; k++)
 			{
