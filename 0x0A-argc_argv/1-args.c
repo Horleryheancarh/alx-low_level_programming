@@ -1,15 +1,15 @@
 #include <stdio.h>
 #include <stdlib.h>
+
 /**
- *main - Entrypoint
- *@argc: argument count
- *@argv: argument value
- *
+ *main - entrypoint
+ *@argc: number of arguments
+ *@argv: array of arguments
  *Return: status
  */
 int main(int argc, char **argv)
 {
-	while (argc--)
-		printf("%s\n", *argv++);
+	(void)argv;
+	printf("%d\n", argc - 1);
 	exit(EXIT_SUCCESS);
 }
