@@ -18,11 +18,11 @@ int main(int argc, char **argv)
 		if (!isdigit(argv[j][i]))
 		{
 			printf("Error\n");
-			exit(EXIT_FAILURE);
+			return (1);
 		}
 		sum += atoi(argv[j]);
 	}
 
 	printf("%d\n", sum);
-	exit(EXIT_SUCCESS);
+	return (0);
 }
