@@ -3,11 +3,11 @@
 #include <stdlib.h>
 
 /**
- *
- *
- *
- *
- *
+ *string_nconcat - function to conctenate two strings
+ *@s1: string
+ *@s2: string
+ *@n: number of characters of s2 to add to s1
+ *Return: string
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
@@ -36,7 +36,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		return (NULL);
 
 	for (k = 0; k <= m; k++)
-	{;
+	{
 		if (k < i)
 			str[k] = s1[k];
 		else
