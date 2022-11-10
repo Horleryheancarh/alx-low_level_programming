@@ -3,11 +3,10 @@
 #include <stdlib.h>
 
 /**
+ *malloc_checked - function to allocate memory
+ *@b: size of memory to be allocated
  *
- *
- *
- *
- *
+ *Return: memory address or error code
  */
 void *malloc_checked(unsigned int b)
 {
