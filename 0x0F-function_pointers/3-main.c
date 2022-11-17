@@ -15,7 +15,7 @@ int main(int argc, char **argv)
 	if (argc - 1 != 3 || argv[2][1])
 	{
 		printf("Error\n");
-		exit(EXIT_FAILURE);
+		exit(98);
 	}
 
 	op = get_op_func(argv[2]);
@@ -23,7 +23,7 @@ int main(int argc, char **argv)
 	if (op == NULL)
 	{
 		printf("Error\n");
-		exit(EXIT_FAILURE);
+		exit(99);
 	}
 
 	a = atoi(argv[1]);
