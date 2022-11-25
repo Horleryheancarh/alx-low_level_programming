@@ -5,7 +5,7 @@
  *@head: head of the linked list
  *@s: string to add to the list
  *
- *Return pointer to head
+ *Return: pointer to head
  */
 list_t *add_node_end(list_t **head, const char *s)
 {
