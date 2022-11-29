@@ -25,6 +25,6 @@ int pop_listint(listint_t **);
 listint_t *get_nodeint_at_index(listint_t *, unsigned int);
 int sum_listint(listint_t *);
 listint_t *insert_nodeint_at_index(listint_t **, unsigned int, int);
-int delete_nodeint_at_index(listint **, unsigned int index);
+int delete_nodeint_at_index(listint_t **, unsigned int index);
 
 #endif
