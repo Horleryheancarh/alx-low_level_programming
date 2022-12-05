@@ -7,6 +7,7 @@
 #include <unistd.h>
 #include <stdlib.h>
 
-ssize_t read_textfile(const char *filename, size_t letters);
+ssize_t read_textfile(const char *, size_t);
+int create_file(const char *, char *);
 
 #endif
