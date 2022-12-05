@@ -67,12 +67,10 @@ int main(int argc, char *argv[])
 	while (chars == 1024)
 	{
 		chars = read(file_from, buffer, 1024);
-		if (chars == -1)
-			error_file(-1, 0, argv);
+		error_file(chars, 0, argv);
 
 		wr = write(file_to, buffer, chars);
-		if (wr == -1)
-			error_file(0, -1, argv);
+		error_file(0, wr, argv);
 	}
 
 	err = close(file_from);
