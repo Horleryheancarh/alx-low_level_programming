@@ -28,7 +28,7 @@ int recursive_search(int *arr, size_t size, int val)
 		mid--;
 
 	if (val == arr[mid])
-		return (int) mid;
+		return ((int) mid);
 
 	if (val < arr[mid])
 		return (recursive_search(arr, mid, val));
@@ -55,6 +55,6 @@ int binary_search(int *arr, size_t size, int val)
 	if (i >= 0 && arr[i] != val)
 		return (-1);
 
-	return i;
+	return (i);
 }
 
