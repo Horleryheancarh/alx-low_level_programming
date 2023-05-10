@@ -28,7 +28,7 @@ int exponential_search(int *arr, size_t size, int val)
 		i *= 2;
 	}
 
-	next = (i >= size) ? (size -1) : i;
+	next = (i >= size) ? (size - 1) : i;
 
 	i /= 2;
 
