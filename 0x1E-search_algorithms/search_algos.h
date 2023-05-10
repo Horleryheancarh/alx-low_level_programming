@@ -3,6 +3,7 @@
 
 #include <stdlib.h>
 #include <stdio.h>
+/*#include <math.h>*/
 
 /**
  * struct listint_s - singly linked list
@@ -21,5 +22,8 @@ typedef struct listint_s
 int linear_search(int *, size_t, int);
 int binary_search(int *, size_t, int);
 int recursive_search(int *, size_t, int);
+int jump_search(int *, size_t, int);
+int interpolation_search(int *, size_t, int);
+int exponential_search(int *, size_t, int);
 
 #endif
