@@ -1,48 +1,6 @@
 #include "search_algos.h"
 
 /**
- * exponential_search - Exponential Search Algorithm
- *
- * @arr: array
- * @size: size of array
- * @val: value to search
- *
- * Return: index or -1
- */
-int exponential_search(int *arr, size_t size, int val)
-{
-	size_t i, next;
-	int result;
-
-	if (arr == NULL)
-		return (-1);
-
-	if (arr[0] == val)
-		return (0);
-
-	i = 1;
-
-	while (arr[i] < val && i < size)
-	{
-		printf("Value checked array[%d] = [%d]\n", (int) i, arr[i]);
-		i *= 2;
-	}
-
-	next = (i >= size) ? (size - 1) : i;
-
-	i /= 2;
-
-	printf("Value found between indexes [%d] and [%d]\n", (int) i, (int) next);
-
-	result = binary_search(arr + i, (next + 1) - i, val);
-
-	if (result >= 0)
-		result += i;
-
-	return (result);
-}
-
-/**
  * recursive_search - Recursive Function
  *
  * @arr: array
@@ -70,7 +28,11 @@ int recursive_search(int *arr, size_t size, int val)
 		mid--;
 
 	if (val == arr[mid])
+	{
+		if (mid > 0)
+			return (recursive_search(arr, mid + 1, val));
 		return ((int) mid);
+	}
 
 	if (val < arr[mid])
 		return (recursive_search(arr, mid, val));
@@ -80,7 +42,7 @@ int recursive_search(int *arr, size_t size, int val)
 }
 
 /**
- * binary_search - Binary Search
+ * advanced_binary - Binary Search
  *
  * @arr: array
  * @size: size of array
@@ -88,7 +50,7 @@ int recursive_search(int *arr, size_t size, int val)
  *
  * Return: index or -1
  */
-int binary_search(int *arr, size_t size, int val)
+int advanced_binary(int *arr, size_t size, int val)
 {
 	int i;
 
@@ -99,3 +61,4 @@ int binary_search(int *arr, size_t size, int val)
 
 	return (i);
 }
+
